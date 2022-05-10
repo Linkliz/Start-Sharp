@@ -17,6 +17,7 @@
     Then she successfully validates the creation of the meeting
     |meetingName|
     |<meetingName>|
+
     Examples:
     |user |password|name    |parentUnit|meetingName|meetingType|startDate |startHour|location|organizedBy |meetingNumber|endDate   |endHour|unit      |reporter    |attendeeList   |
     |admin|serenity|Unidad Liz|Acme Corp.|Reunion |Strategy   |10/05/2022|10:50   |HQ-01   |Aaron Taylor|0021        |11/05/2022|11:50  |Unidad Liz|Adam Edwards|Alexandra James|
@@ -28,6 +29,7 @@
         |<user>|<password>|
       Then she successfully validates that the credentials do not exist
         |Invalid username or password!|
+
       Examples:
         |user |password|
         |linkliz|serenity|
