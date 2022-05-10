@@ -27,7 +27,7 @@
         |user|password|
         |<user>|<password>|
       Then she successfully validates that the credentials do not exist
-        |Login to your account|
+        |Invalid username or password!|
       Examples:
         |user |password|
         |linkliz|serenity|
