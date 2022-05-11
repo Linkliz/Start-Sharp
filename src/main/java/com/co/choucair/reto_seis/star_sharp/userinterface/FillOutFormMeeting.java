@@ -4,7 +4,7 @@ import net.serenitybdd.core.annotations.findby.By;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 
-public class FillOutFormMetting extends PageObject {
+public class FillOutFormMeeting extends PageObject {
 
     public static final Target BUTTON_MEETING = Target.the("Clic in the button meeting").located(By.xpath("/html/body/aside/div[2]/div[2]/div[1]/ul/li[3]/ul/li[2]/a/span"));
     public static final Target BUTTON_METTINGS = Target.the("Clic in the button meetings").located(By.xpath("/html/body/aside/div[2]/div[2]/div[1]/ul/li[3]/ul/li[2]/ul/li[1]/a/span"));
@@ -31,6 +31,6 @@ public class FillOutFormMetting extends PageObject {
     public static final Target INPUT_ATTENDANCE_STATUS = Target.the("Select attendance status").located(By.xpath("/html/body/main/section/div[2]/div[2]/div[1]/div[2]/form/div/div/div/div/div[10]/div[1]/div[2]/div[4]/div[3]/div/div/div[4]/select"));
     public static final Target SAVE_MEETING = Target.the("Save the meeting").located(By.xpath("/html/body/main/section/div[2]/div[2]/div[1]/div[1]/div/div/div/div[1]/div/span"));
     public static final Target SEARCH_METTING = Target.the("search meeting").located(By.xpath("/html/body/main/section/div/div[2]/div[1]/input"));
-    public static final Target MEETING_NAME_TABLE = Target.the("name meeting").located(By.xpath("/html/body/main/section/div/div[1]/div"));
+    public static final Target MEETING_NAME_TABLE = Target.the("name meeting").located(By.xpath("//body/main[1]/section[1]/div[1]/div[3]/div[4]/div[3]/div[1]/div[1]/div[2]"));
 
 }

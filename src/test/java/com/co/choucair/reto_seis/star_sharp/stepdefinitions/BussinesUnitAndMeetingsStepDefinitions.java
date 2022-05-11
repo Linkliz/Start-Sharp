@@ -6,7 +6,7 @@ import com.co.choucair.reto_seis.star_sharp.model.UserData;
 import com.co.choucair.reto_seis.star_sharp.questions.StarSharpAnswer;
 import com.co.choucair.reto_seis.star_sharp.task.BussinesUnitFillOutForm;
 import com.co.choucair.reto_seis.star_sharp.task.Login;
-import com.co.choucair.reto_seis.star_sharp.task.MettingFillOutForm;
+import com.co.choucair.reto_seis.star_sharp.task.MeetingFillOutForm;
 import com.co.choucair.reto_seis.star_sharp.task.OpenUp;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -37,7 +37,7 @@ public class BussinesUnitAndMeetingsStepDefinitions {
 
     @When("^She create meeting$")
     public void sheCreateMeeting(List<MeetingData> meetingData) {
-        OnStage.theActorInTheSpotlight().attemptsTo(MettingFillOutForm.the(meetingData.get(0)));
+        OnStage.theActorInTheSpotlight().attemptsTo(MeetingFillOutForm.the(meetingData.get(0)));
     }
 
     @Then("^she successfully validates the creation of the meeting$")

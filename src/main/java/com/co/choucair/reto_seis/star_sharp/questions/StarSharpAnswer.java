@@ -1,12 +1,9 @@
 package com.co.choucair.reto_seis.star_sharp.questions;
 
-import com.co.choucair.reto_seis.star_sharp.model.MeetingData;
-import com.co.choucair.reto_seis.star_sharp.userinterface.FillOutFormMetting;
-import com.co.choucair.reto_seis.star_sharp.userinterface.LoginValidatePage;
+import com.co.choucair.reto_seis.star_sharp.userinterface.FillOutFormMeeting;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
-import org.apache.xpath.operations.Bool;
 
 public class StarSharpAnswer implements Question<Boolean> {
 
@@ -22,9 +19,15 @@ public class StarSharpAnswer implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         Boolean result;
-        String nameMeeting = Text.of(FillOutFormMetting.MEETING_NAME_TABLE).viewedBy(actor).asString();
-        if (nameMeeting.equals("Meetings")){
+        String nameMeeting = Text.of(FillOutFormMeeting.MEETING_NAME_TABLE).viewedBy(actor).asString();
+        if (nameMeeting.equals(meetingName)){
             result = true;
         }else{
             result = false;

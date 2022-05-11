@@ -1,9 +1,6 @@
 package com.co.choucair.reto_seis.star_sharp.questions;
 
-import com.co.choucair.reto_seis.star_sharp.userinterface.FillOutFormMetting;
 import com.co.choucair.reto_seis.star_sharp.userinterface.LoginValidatePage;
-import com.co.choucair.reto_seis.star_sharp.userinterface.StartSharpLoginPage;
-import com.co.choucair.reto_seis.star_sharp.userinterface.StartSharpPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
