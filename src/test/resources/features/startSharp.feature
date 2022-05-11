@@ -4,13 +4,11 @@
   Feature: Star #
     As user, I want to create business units and meetings within the Start Sharp application
 
-    Background:
-      Given than Lizeth wants to create business units and a meeting
-        |user|password|
-        |admin|serenity|
-
   @Scenario1
   Scenario Outline: Create business unit and a meeting
+    Given than Lizeth wants to create business units and a meeting
+      |user|password|
+      |admin|serenity|
     When She create business units
     |name|parentUnit|
     |<name>|<parentUnit>|
@@ -26,6 +24,9 @@
 
     @Scenario2
     Scenario: Validate credentials for Start Sharp
+      Given than Lizeth wants to create business units and a meeting
+        |user|password|
+        |admin|serenity|
       When she open the form Contact
       Then she successfully validates required fields into form Contact
         |Please validate empty or invalid inputs (marked with red) before submitting the form.|
