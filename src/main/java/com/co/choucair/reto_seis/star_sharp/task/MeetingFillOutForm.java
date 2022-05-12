@@ -23,11 +23,11 @@ public class MeetingFillOutForm implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(FillOutFormMeeting.BUTTON_MEETING),
-                Click.on(FillOutFormMeeting.BUTTON_METTINGS),
+                Click.on(FillOutFormMeeting.BUTTON_MEETINGS),
                 Click.on(FillOutFormMeeting.NEW_MEETING),
                 Enter.theValue(meetingData.getMeetingName()).into(FillOutFormMeeting.INPUT_MEETING_NAME),
                 Click.on(FillOutFormMeeting.MEETING_TYPE),
-                Enter.keyValues(meetingData.getMeetingType()).into(FillOutFormMeeting.INPUT_METTING_TYPE).thenHit(Keys.ENTER),
+                Enter.keyValues(meetingData.getMeetingType()).into(FillOutFormMeeting.INPUT_MEETING_TYPE).thenHit(Keys.ENTER),
                 Enter.theValue(meetingData.getMeetingNumber()).into(FillOutFormMeeting.INPUT_MEETING_NUMBER),
                 Enter.theValue(meetingData.getStartDate()).into(FillOutFormMeeting.INPUT_START_DATE),
                 SelectFromOptions.byValue(meetingData.getStartHour()).from(FillOutFormMeeting.INPUT_START_HOUR),
@@ -51,7 +51,7 @@ public class MeetingFillOutForm implements Task {
                 Hit.the(Keys.ARROW_DOWN).into(FillOutFormMeeting.INPUT_ATTENDANCE_STATUS),
                 Hit.the(Keys.ENTER).into(FillOutFormMeeting.INPUT_ATTENDANCE_STATUS),
                 Click.on(FillOutFormMeeting.SAVE_MEETING),
-                Enter.theValue(meetingData.getMeetingName()).into(FillOutFormMeeting.SEARCH_METTING)
+                Enter.theValue(meetingData.getMeetingName()).into(FillOutFormMeeting.SEARCH_MEETING)
                 );
     }
 }
